@@ -7,6 +7,8 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
+    " Surround plugin"
+    Plug 'tpope/vim-surround' 
     " Autocomplete"
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Better Syntax Support
@@ -15,5 +17,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+    Plug 'tpope/vim-fugitive'
+    Plug 'vim-airline/vim-airline'
 
 call plug#end()
