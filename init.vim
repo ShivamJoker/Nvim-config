@@ -2,6 +2,9 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 " Enable relative line
 set nu! rnu!
 
+"Enable mouse
+set mouse=a
+
 " map jj to escape
 inoremap jj <Esc>
 inoremap kk <Esc>

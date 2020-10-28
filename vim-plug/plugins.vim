@@ -1,3 +1,4 @@
+
 " auto-install vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -17,7 +18,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+    "Plugin for git
     Plug 'tpope/vim-fugitive'
+    "Shows bottom status bar
     Plug 'vim-airline/vim-airline'
-
+    "Fuzzy finder
+    Plug 'junegunn/fzf' 
+    Plug 'junegunn/fzf.vim'
+    
 call plug#end()
