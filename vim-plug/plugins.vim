@@ -25,5 +25,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Fuzzy finder
     Plug 'junegunn/fzf' 
     Plug 'junegunn/fzf.vim'
-    
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'andymass/vim-matchup'
+    Plug 'pangloss/vim-javascript'
+    Plug 'joshdick/onedark.vim'
 call plug#end()
