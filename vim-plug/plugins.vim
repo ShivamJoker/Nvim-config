@@ -22,6 +22,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     "Shows bottom status bar
     Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
     "Fuzzy finder
     Plug 'junegunn/fzf' 
     Plug 'junegunn/fzf.vim'
@@ -29,4 +30,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'andymass/vim-matchup'
     Plug 'pangloss/vim-javascript'
     Plug 'joshdick/onedark.vim'
+    Plug 'tpope/vim-commentary'
+    Plug 'mattn/emmet-vim'
 call plug#end()

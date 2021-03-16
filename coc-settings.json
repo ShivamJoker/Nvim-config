@@ -9,6 +9,7 @@
     "javascriptreact",
     "typescript.tsx",
     "graphql",
-    "html"
+    "html",
+    "css"
   ]
 }
