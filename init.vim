@@ -19,9 +19,19 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Move to previous/next
+nnoremap <silent>    <A-,> :BufferPrevious<CR>
+nnoremap <silent>    <A-.> :BufferNext<CR>
+" Re-order to previous/next
+nnoremap <silent>    <A-<> :BufferMovePrevious<CR>
+nnoremap <silent>    <A->> :BufferMoveNext<CR>
+
+
+
+colorscheme onedark
+
 " Color scheme
 syntax on
-colorscheme onedark
 let g:airline_theme='onedark'
 "airlinefonts
 let g:airline_powerline_fonts = 1
@@ -72,6 +82,10 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+"Coc-explorer
+nmap <space>e :CocCommand explorer<CR>
+autocmd BufEnter * if (winnr('$') == 1 && &filetype == 'coc-explorer') | q | endif
 
 " Use <c-space> to trigger completion.
 if has('nvim')
